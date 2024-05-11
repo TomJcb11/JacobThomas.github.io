@@ -1,0 +1,51 @@
+.skills li {
+    display: flex; /* Affiche les éléments sur la même ligne */
+    align-items: center; /* Centre verticalement le contenu */
+    background-color: #f0f0f0;
+
+  }
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+     /* Ajoute une couleur de fond */
+    padding: 5px 10px; /* Ajoute du rembourrage pour distinguer le texte */
+    text-align: left;
+  }
+
+.stars {
+    display: inline-block;
+    font-size: 20px; /* Taille de la police des étoiles */
+    margin-left:auto;
+  }
+  
+  .stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    color: lightgray;
+  }
+  
+  .stars[data-rating="1"]::before {
+    content: "★☆☆☆☆";
+    color: gold;
+  }
+  
+  .stars[data-rating="2"]::before {
+    content: "★★☆☆☆";
+    color: gold;
+  }
+  
+  .stars[data-rating="3"]::before {
+    content: "★★★☆☆";
+    color: gold;
+  }
+  
+  .stars[data-rating="4"]::before {
+    content: "★★★★☆";
+    color: gold;
+  }
+  
+  .stars[data-rating="5"]::before {
+    content: "★★★★★";
+    color: gold;
+  }
+
