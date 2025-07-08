@@ -26,13 +26,14 @@
 				<!-- Nav -->
 				<nav id="nav">
 					<ul class="links">
-						<li class="active"><a href="index.html">cv</a></li>
-						<li><a href="generic.html">Academic Projects </a></li>
-						<li><a href="annexes.html">Annexes</a></li>
+						<li><a href="index.html">cv</a></li>
+						<li class="active"><a href="generic.html">Academic Projects </a></li>
+
 					</ul>
-					<ul class="icons">
-						<li><a href="https://github.com/TomJcb11" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-					</ul>
+                    <ul class="icons">
+                        <li><a href="https://github.com/TomJcb11" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/thomas-jacob-863ab3349/overlay/about-this-profile/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                    </ul>
 				</nav>
 
 				<!-- Main -->
@@ -52,29 +53,128 @@
     <!-- Posts -->
         <section class="posts">
 
-            <article>
+            <article class="project-card">
                 <header>
-                    <span class="date">My capstone project</span>
-                    <h2>Jim -
-                        Elevating Your Fitness Journey<br />
-                    React native</a></h2>
+                    <span class="date">My Capstone Project</span>
+                    <h2>Jim - Elevating Your Fitness Journey</h2>
                 </header>
-                <a class="image fit"><img src="images/apk.png" alt="" /></a>
-                <p>My final year project aimed to provide users with regular, progressive, and on-demand support during their workout sessions. From a technical standpoint, I endeavored to make it as refined as possible.</p>
-                <ul class="actions special">
-                    <li><a href="https://github.com/TomJcb11/Jim-application-mobile-d-accompagnement-sportif" class="button">GitHub Project</a></li>
-                </ul>
+                <a class="image fit">
+                    <img src="images/apk.png" alt="Jim Mobile App" />
+                </a>
+                <div class="project-details">
+                    <h3> Purpose</h3>
+                    <ul class="tech-list">
+                        <li>Mobile Development</li>
+                        <li>Fitness Tracking</li>
+
+                    </ul>
+                    <h3>Technologies Used:</h3>
+                    <ul class="tech-list">
+                        <li>React Native</li>
+                        <li>NodeJS</li>
+                        <li>Prisma ORM</li>
+                        <li>GraphQL</li>
+
+                    </ul>
+                    <ul class="actions special">
+                        <li><a href="https://github.com/TomJcb11/Jim-application-mobile-d-accompagnement-sportif" class="button">GitHub Project</a></li>
+                    </ul>
+
+                </div>
             </article>
+
+            <!-- CSS for styling -->
+            <style>
+                .project-card {
+                    background-color: #f9f9f9;
+                    border-radius: 10px;
+                    padding: 2px;
+                    margin-bottom: 2px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .project-card header h2 {
+                    font-size: 1.8em;
+                    margin-bottom: 10px;
+                    color: #333;
+                }
+
+                .project-card .date {
+                    font-size: 1.2em;
+                    color: #888;
+                    margin-bottom: 15px;
+                }
+
+                .image.fit img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .project-details {
+                    margin-top: 20px;
+                }
+
+
+                .project-details h3 {
+                    text-align: left;
+                    margin-top: 15px;
+                    margin-bottom: 10px;
+                    font-size: 1.2em;
+                    font-weight: bold;
+                }
+
+
+                .project-details .tech-list {
+                    padding-left: 0;
+                    margin-top: 0;
+                }
+
+                .tech-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    gap: 10px;
+                    padding: 0;
+                    margin: 0;
+                    margin-bottom: 30px;
+                }
+
+                .tech-list li {
+                    display: flex;
+                    align-items: center;
+                    background-color: #f4f7fb;
+
+                    font-size: 1.1em;
+                    color: #333;
+                    margin: 5px;
+                    padding: 8px 16px;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+                }
+            </style>
             <article>
                 <header>
                     <span class="date">2023</span>
-                    <h2>DImmensional Control<br />
-                       Python & tkinter</a></h2>
+                    <h2>Dimmensional Control </a></h2>
                 </header>
                 <a class="image fit"><img src="images/tkinter.PNG" alt="" /></a>
-                <p>We utilized OpenCV to examine and document specific specifications of a series of plates on a production line.</p>
+                <div class="project-details">
+                    <h3> Purpose</h3>
+                    <ul class="tech-list">
+                        <li>Computer vision</li>
+                        <li>Automatic analysis</li>
+
+                    </ul>
+                    <h3>Technologies Used:</h3>
+                    <ul class="tech-list">
+                        <li>Python</li>
+                        <li>OpenCV (clustering,image filtering)</li>
+                        <li>Tkinter</li>
+                    </ul>
                 <ul class="actions special">
-                    <li><a href="/JacobThomas.github.io/pdf/Rapport_TDS.pdf" class="button">Full Story</a></li>
+                    <li><a href="pdf/Rapport_TDS.pdf" class="button">Full Story</a></li>
                     <li><a href="https://github.com/TomJcb11/TDS_Dimmensional_Control" class="button">GitHub Project</a></li>
                 </ul>
             </article>
@@ -85,7 +185,21 @@
                     for data Sciences</a></h2>
                 </header>
                 <a  class="image fit"><img src="images/streamlit.png" alt="" /></a>
-                <p>During my internship, I was able to create a dashboard for various functionalities such as inventory management of premises, examination rooms, etc</p>
+                <h3> Purpose</h3>
+                <ul class="tech-list">
+                    <li>Various functionalities</li>
+                    <li>Dashboard</li>
+
+                </ul>
+                <h3>Technologies Used:</h3>
+                <ul class="tech-list">
+                    <li>Python</li>
+                    <li>Pandas ETL</li>
+                    <li>Streamlit</li>
+                    <li>Postgres</li>
+                    <li>Docker</li>
+                    <li>Ubuntu Server</li>
+                </ul>
                 <ul class="actions special">
                     <li><a href="https://github.com/TomJcb11/Streamlit" class="button">GitHub Project</a></li>
                 </ul>
@@ -93,11 +207,22 @@
             <article>
                 <header>
                     <span class="date">2024</span>
-                    <h2>De TaalTool Box<br />
-                    Angular</a></h2>
+                    <h2>De TaalTool Box</h2>
                 </header>
                 <a  class="image fit"><img src="images/dtt.png" alt="" /></a>
-                <p>I had the opportunity to work on this Angular project, although it's private and I don't have authorization to share the repository. Nonetheless, it was instrumental in developing my skills in web development and using technologies such as Docker, TypeORM, etc. </p>
+                <p>I had the opportunity to work on this Angular project, although it's private and I don't have authorization to share the repository. Nonetheless, it was instrumental in developing my skills in web development. </p>
+                <h3> Purpose</h3>
+                <ul class="tech-list">
+                    <li>Internship project</li>
+                    <li>High-school education</li>
+
+                </ul>
+                <h3>Technologies Used:</h3>
+                <ul class="tech-list">
+                    <li>Angular</li>
+                    <li>NodeJs</li>
+                    <li>TypeORM</li>
+                </ul>
                 <ul class="actions special">
                 </ul>
             </article>
@@ -107,7 +232,16 @@
                     <h2>Password manager.<br />
                         using Python & tkinter</a></h2>
                 <a class="image fit"><img src="images/tkinter2.png" alt="" /></a>
-                <p>I had the opportunity to develop a complete GUI using Tkinter for a local and comprehensive password manager.</p>
+                <h3> Purpose</h3>
+                <ul class="tech-list">
+                    <li>Automatic password manager</li>
+                    <li>Cryptography</li>
+                </ul>
+                <h3>Technologies Used:</h3>
+                <ul class="tech-list">
+                    <li>Python</li>
+                    <li>Tkinter</li>
+                </ul>
                 <ul class="actions special">
                     <li><a href="https://github.com/TomJcb11/projetGestionnaireMDP" class="button">GitHub Project</a></li>
                 </ul>
@@ -119,7 +253,18 @@
                     Angular</h2>
                 </header>
                 <a class="image fit"><img src="images/us1.png" alt="" /></a>
-                <p>The main focus of this project was on Agile methodologies rather than technical outcomes. Consequently, we also introduced many new concepts, such as incorporating the Angular framework.</p>
+                <h3> Purpose</h3>
+                <ul class="tech-list">
+                    <li>Crowfunding Web-Platform</li>
+                    <li>External API (Paypal)</li>
+                    <li>Agile methodologies</li>
+                </ul>
+                <h3>Technologies Used:</h3>
+                <ul class="tech-list">
+                    <li>Angular</li>
+                    <li>nodeJs</li>
+                    <li>PostgreSQL</li>
+                </ul>
                 <ul class="actions special">
                     <li><a href="https://github.com/TomJcb11/G-05-CrowdFunding" class="button">GitHub Project</a></li>
                 </ul>
@@ -131,11 +276,6 @@
 				<!-- Footer -->
 				<footer id="footer">
 					<section class="split contact">
-						<section class="alt">
-							<h3>Address</h3>
-							<p>Rue de la station 22<br />
-							6230 Pont-à-Celles</p>
-						</section>
 						<section>
 							<h3>Phone</h3>
 							<p>04 71 32 76 55</p>
@@ -152,7 +292,9 @@
 							<ul class="icons alt">
 								
 								<li><a href="https://github.com/TomJcb11" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							</ul>
+                                <li><a href="https://www.linkedin.com/in/thomas-jacob-863ab3349/overlay/about-this-profile/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+
+                            </ul>
 						</section>
 					</section>
 				</footer>
